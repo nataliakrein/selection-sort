@@ -1,4 +1,4 @@
-<script type="text/javascript">
+
     let vetor = [];
     waitTime = 10;
     //Cria o grid
