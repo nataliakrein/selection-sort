@@ -1,15 +1,14 @@
-
-    let vetor = [];
-    waitTime = 10;
-    //Cria o grid
-    function CriarGrid() {
-        tamanhoDoVetor = 50;
-        //Vetor com números aleatórios
-        for (let i = 0; i < tamanhoDoVetor; i++) {
-            vetor.push(getRandom(1, tamanhoDoVetor));
-        }
-        //Cria a div com as colunas
-        var grid = document.getElementById("grid");
+let vetor = [];
+waitTime = 10;
+//Cria o grid
+function CriarGrid() {
+    tamanhoDoVetor = 50;
+    //Vetor com números aleatórios
+    for (let i = 0; i < tamanhoDoVetor; i++) {
+      vetor.push(getRandom(1, tamanhoDoVetor));
+    }
+    //Cria a div com as colunas
+    var grid = document.getElementById("grid");
         for (let i = 0; i < vetor.length; i++) {
             var divColuna = document.createElement("div");
             divColuna.className = "col";
@@ -35,10 +34,8 @@
     
     async function selectionSort() {
         for (let currentIndex = 0; currentIndex < vetor.length; currentIndex++) {
-            //Aqui, por exemplo, vai parar o código nessa parte e esperar pelo valor
-            //que estão no waitTime, o padrão é 10, então é 10 ms (0.01 s) 
+            /* Aqui, por exemplo, vai parar o código nessa parte e esperar pelo valor que estão no waitTime, o padrão é 10, então é 10 ms (0.01 s) */ 
             await sleep(waitTime);
-            // Finding the smallest number in the subarray
             let lowestValueIndex = currentIndex;
             addClass(document.getElementById(lowestValueIndex), "blue");
             for (let j = currentIndex + 1; j < vetor.length; j++) {
