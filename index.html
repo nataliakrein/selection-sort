@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Select Sort</title>
+</head>
+<body onload="CriarGrid();">
+    <h1 class="titulo">Demonstração do Algoritmo Select Sort</h1>
+    <div id="grid" class="grid-container">
+    </div>
+    <div id="grid-index">
+    </div>
+    <div class="container">
+        <div class="col">
+            <label id="rangeValue">Velocidade dos passos: 0.01 s</label>
+        </div>
+        <div class="col">
+            <input onchange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)" type="range" min="0"
+                max="1000" value="10" step="10">
+        </div>
+        <div class="col">
+            <button id="btn" class="btn" onclick="order()">Ordenar</button>
+        </div>
+    </div>
+    <div class="creditos">
+        <p>Desenvolvido por:<br>
+        Guilherme M. Liesenfeld, <br>
+        Natália Krein, <br>
+        Suriel A. R. Gonçalves.
+        </p>
+    </div>
+</body>
+
+<script type="text/javascript" src="main.js">
+</script>
+
+</html>
